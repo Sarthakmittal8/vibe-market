@@ -72,7 +72,7 @@ Sarthakmittal8-vibe-market/
 
 1. Clone the repository
 ```bash
-git clone https://github.com/Pulkit-Jain1/heritage-hands.git
+git clone https://github.com/Sarthakmittal8/vibe-market.git
 cd heritage-hands
 ```
 
@@ -110,9 +110,6 @@ CLOUDINARY_API_SECRET=your_api_secret
 # Stripe
 STRIPE_SECRET_KEY=your_stripe_secret_key
 CLIENT_URL=http://localhost:5173
-
-# Google AI
-GEMINI_API_KEY=your_gemini_api_key
 ```
 
 4. Seed the database (optional)
