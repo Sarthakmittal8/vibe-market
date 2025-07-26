@@ -1,4 +1,4 @@
-# 🏺Vibe Market
+# 🛍️ Vibe Market
 
 ## A Modern E-commerce Platform for Fashion & Apparel or Clothing & Accessories
 
