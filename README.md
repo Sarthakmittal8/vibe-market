@@ -1,82 +1,98 @@
-# 🛍️ Vibe Market
+# 🛍️ Vibe Market  
+### Full-Stack Fashion & Lifestyle E-Commerce Platform
 
-## A Modern E-commerce Platform for Fashion & Apparel or Clothing & Accessories
+**Vibe Market** is a scalable, production-ready full-stack e-commerce application designed for modern fashion and lifestyle retail. The platform delivers a seamless shopping experience with secure authentication, real-time cart management, integrated payments, and an advanced admin dashboard.
 
-**Vibe Market** is a modern full-stack e-commerce platform built to bring style and simplicity together. It offers a smooth and responsive shopping experience for fashion and lifestyle products including jeans, t-shirts, suits, glasses, shoes, jackets, bags, and more.
+It supports a wide range of products including apparel, footwear, accessories, and lifestyle essentials.
 
-## ✨ Features
+---
 
-- **User Authentication** - Secure signup, login, and token-based session management
-- **Product Browsing** - Browse products by categories with rich visual layouts
-- **Shopping Cart** - Add, remove, and update product quantities in cart
-- **Coupon System** - Apply discount coupons during checkout
-- **Secure Payments** - Integrated Stripe payment gateway
-- **AI-Powered Product Management** - Analyze product images using Google's Gemini AI to generate descriptions
-- **Admin Dashboard** - Manage products and view sales analytics
-- **Responsive Design** - Optimized for all device sizes
+## 🚀 Key Highlights
 
-## 🛠️ Technologies Used
+- Secure JWT-based authentication with Redis-backed session handling  
+- Category-based product browsing with responsive UI  
+- Dynamic cart management with real-time updates  
+- Discount coupon engine integrated at checkout  
+- Stripe-powered secure payment processing  
+- Admin dashboard with product control and analytics  
+- AI-assisted product description generation  
+- Fully responsive across devices  
 
-### Frontend
-- React 18
-- Zustand (state management)
-- TailwindCSS (styling)
-- Framer Motion (animations)
-- Recharts (analytics visualization)
-- Lucide React (icons)
+---
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB with Mongoose
-- Redis (caching)
-- JWT (authentication)
-- Cloudinary (image storage)
-- Stripe (payment processing)
-- Google Generative AI (Gemini API)
+## 🧩 System Architecture
 
-## 🏗️ Project Structure
+Vibe Market follows a clean separation of concerns with independent frontend and backend services.
+
+### 🔹 Frontend
+
+- React 18  
+- Zustand (State Management)  
+- TailwindCSS (Utility-first styling)  
+- Framer Motion (Animations)  
+- Recharts (Sales analytics visualization)  
+- Lucide React (Icons)  
+
+### 🔹 Backend
+
+- Node.js  
+- Express.js  
+- MongoDB with Mongoose  
+- Redis (Caching & session optimization)  
+- JWT (Authentication & authorization)  
+- Cloudinary (Media storage)  
+- Stripe (Payment processing)  
+
+---
+
+## 📂 Project Structure
 
 ```
-Sarthakmittal8-vibe-market/
-├── LICENSE
-├── package.json
-├── backend/          # Node.js/Express backend
-│   ├── server.js     # Entry point
-│   ├── controllers/  # Business logic
-│   ├── lib/          # External services connectors
-│   ├── middleware/   # Request/response middleware
-│   ├── models/       # MongoDB schemas
-│   ├── routes/       # API endpoints
-│   └── seeds/        # Database seeders
-└── frontend/         # React frontend
-    ├── public/       # Static assets
+vibe-market/
+│
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── lib/
+│   ├── seeds/
+│   └── server.js
+│
+└── frontend/
+    ├── public/
     └── src/
-        ├── components/  # Reusable UI components
-        ├── lib/         # Utility functions
-        ├── pages/       # Page components
-        └── stores/      # Zustand state stores
+        ├── components/
+        ├── pages/
+        ├── stores/
+        └── lib/
 ```
 
-## 🚀 Installation
+---
+
+## ⚙️ Setup & Installation
 
 ### Prerequisites
+
 - Node.js (v16+)
 - MongoDB
 - Redis
 - Stripe account
 - Cloudinary account
-- Google AI API key (for Gemini integration)
 
-### Setup
+---
 
-1. Clone the repository
+### 1️⃣ Clone Repository
+
 ```bash
 git clone https://github.com/Sarthakmittal8/vibe-market.git
-cd heritage-hands
+cd vibe-market
 ```
 
-2. Install dependencies
+---
+
+### 2️⃣ Install Dependencies
+
 ```bash
 npm install
 cd frontend
@@ -84,68 +100,76 @@ npm install
 cd ..
 ```
 
-3. Environment variables
+---
 
-Create a `.env` file in the root directory with the following variables:
+### 3️⃣ Configure Environment Variables
+
+Create a `.env` file in the root directory:
+
 ```
-# Server
 PORT=5000
 NODE_ENV=development
 
-# Database
 MONGO_URI=your_mongodb_connection_string
 
-# JWT
 ACCESS_TOKEN_SECRET=your_access_token_secret
 REFRESH_TOKEN_SECRET=your_refresh_token_secret
 
-# Redis
 UPSTASH_REDIS_URL=your_redis_url
 
-# Cloudinary
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
 
-# Stripe
 STRIPE_SECRET_KEY=your_stripe_secret_key
 CLIENT_URL=http://localhost:5173
 ```
 
-4. Seed the database (optional)
+---
+
+### 4️⃣ (Optional) Seed Database
+
 ```bash
 node backend/seeds/seedDatabase.js
 ```
 
-5. Start the development server
+---
+
+### 5️⃣ Start Development Server
+
 ```bash
 npm run dev
 ```
 
-## 🔍 Usage
+---
 
-### Customer Features
-- Browse products by categories
-- Add products to cart
-- Apply discount coupons
-- Checkout securely with Stripe
-- View order history
+## 🛒 Platform Capabilities
 
-### Admin Features
-- Access admin dashboard at `/secret-dashboard`
-- Create and manage products
-- Use AI to generate product descriptions
-- Toggle featured products
-- View sales analytics
+### 👤 Customer
 
-## 📝 License
+- Browse products by category  
+- Add, update, and remove cart items  
+- Apply discount coupons  
+- Complete secure Stripe checkout  
+- View order history  
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### 🛠️ Admin
 
-## 🤝 Contributing
+- Access dashboard via `/secret-dashboard`  
+- Create, update, and manage products  
+- Generate AI-based product descriptions  
+- Toggle featured products  
+- Monitor sales analytics  
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🤝 Contributions
+
+Contributions, suggestions, and improvements are welcome.  
+Feel free to fork the repository and submit a pull request.
