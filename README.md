@@ -15,7 +15,6 @@ It supports a wide range of products including apparel, footwear, accessories, a
 - Discount coupon engine integrated at checkout  
 - Stripe-powered secure payment processing  
 - Admin dashboard with product control and analytics  
-- AI-assisted product description generation  
 - Fully responsive across devices  
 
 ---
@@ -156,8 +155,7 @@ npm run dev
 ### 🛠️ Admin
 
 - Access dashboard via `/secret-dashboard`  
-- Create, update, and manage products  
-- Generate AI-based product descriptions  
+- Create, update, and manage products   
 - Toggle featured products  
 - Monitor sales analytics  
 
